@@ -37,7 +37,7 @@ def bluetooth(data):
     if codigo == "Error datos":
         print(f"Los datos recibidos [{data}] no son binarios [0,1]")
     elif codigo == "Error longitud":
-        print(f"La longitud de los datos es mayor a [5] en [{len(data)-5}]")
+        print(f"La longitud de los datos es diferente a [5] en [{len(data)-5}]")
     else:
         print("Datos recibidos por Bluetooth: ", codigo)
         # Codificar el string recibido
